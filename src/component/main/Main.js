@@ -5,6 +5,7 @@ import OpenSea from '../../assests/images/opensea_token.svg';
 import MBToken from '../../assests/images/mb_token.svg';
 import MetaMask from '../../assests/images/meta_mask_token.svg';
 import CardSection from './sections/card_section/CardSection';
+import InfoSection from './sections/info_section/InfoSection';
 
 const Main = () => {
   return (
@@ -28,8 +29,8 @@ const Main = () => {
           </li>
         </ul>
       </section>
-
       <CardSection />
+      <InfoSection />
     </MainContainer>
   );
 };
