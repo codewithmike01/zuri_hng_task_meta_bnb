@@ -10,8 +10,7 @@ export const NavHeaderWrapper = styled.div`
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-
-  align-items: center;
+  align-items: flex-end;
 
   .logo-section {
     display: flex;

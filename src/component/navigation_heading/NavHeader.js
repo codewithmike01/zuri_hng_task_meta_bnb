@@ -17,8 +17,8 @@ const NavHeader = () => {
         </section>
 
         <nav>
-          <Link to="none">Home</Link>
-          <Link to="none">Place to stay</Link>
+          <Link to="/">Home</Link>
+          <Link to="/place">Place to stay</Link>
           <Link to="none">NFTs</Link>
           <Link to="none">Community</Link>
         </nav>
