@@ -2,7 +2,7 @@ import React from 'react';
 import { PlaceToStayContainer, PlaceToStayWrapper } from './PlaceToStay.style';
 import Setting from '../../assests/images/setting.svg';
 import { cardItems } from './service';
-import Card from '../../global_componets_style/card/Card';
+import CardContainer from '../../global_componets_style/card_container/CardContainer';
 
 const PlaceToStay = () => {
   return (
@@ -41,11 +41,7 @@ const PlaceToStay = () => {
           </div>
         </section>
 
-        <section className="card-section">
-          {cardItems.map(({ id, image }) => (
-            <Card image={image} key={id} />
-          ))}
-        </section>
+        <CardContainer cardItems={cardItems} />
       </PlaceToStayWrapper>
     </PlaceToStayContainer>
   );

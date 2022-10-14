@@ -13,6 +13,8 @@ export const FooterContainer = styled.div`
     align-items: center;
     gap: 0.6rem;
     color: #f7f7f7;
+
+    font-size: 0.7rem;
   }
 `;
 

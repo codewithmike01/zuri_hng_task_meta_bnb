@@ -4,9 +4,9 @@ import { MainContainer } from './Main.style';
 import OpenSea from '../../assests/images/opensea_token.svg';
 import MBToken from '../../assests/images/mb_token.svg';
 import MetaMask from '../../assests/images/meta_mask_token.svg';
-import CardSection from './sections/card_section/CardSection';
 import InfoSection from './sections/info_section/InfoSection';
-
+import CardContainer from '../../global_componets_style/card_container/CardContainer';
+import { cardItems } from './sections/card_section/service/cardService';
 const Main = () => {
   return (
     <MainContainer>
@@ -29,7 +29,7 @@ const Main = () => {
           </li>
         </ul>
       </section>
-      <CardSection />
+      <CardContainer cardItems={cardItems} />
       <InfoSection />
     </MainContainer>
   );
