@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { NavHeaderContainer, NavHeaderWrapper } from './NavHeader.style';
 import logo from '../../assests/images/logo.svg';
 import logoName from '../../assests/images/logo_name.svg';
-const NavHeader = () => {
+const NavHeader = ({ func }) => {
   return (
     <NavHeaderContainer>
       <NavHeaderWrapper>
@@ -24,7 +24,9 @@ const NavHeader = () => {
         </nav>
 
         <section className="create-wallet">
-          <button>Create wallet</button>
+          <button type="button" onClick={() => func()}>
+            Create wallet
+          </button>
         </section>
       </NavHeaderWrapper>
     </NavHeaderContainer>

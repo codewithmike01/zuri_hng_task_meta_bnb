@@ -51,6 +51,7 @@ export const NavHeaderWrapper = styled.div`
   .create-wallet {
     align-self: center;
     button {
+      cursor: pointer;
       color: #fff;
       padding: 0.7rem 1.5rem;
       border: none;

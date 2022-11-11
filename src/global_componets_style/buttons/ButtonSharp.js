@@ -14,6 +14,7 @@ export default ButtonSharp;
 
 const ButtonContainer = styled.div`
   button {
+    cursor: pointer;
     color: #fff;
     padding: 0.7rem 1.5rem;
     border: none;
