@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { bgColor } from '../../global_componets_style/Global.style';
 
 export const NavHeaderContainer = styled.div`
   padding-top: 1.5rem;

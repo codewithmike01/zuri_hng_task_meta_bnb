@@ -8,7 +8,7 @@ export const BannerWrapper = styled.div`
   max-width: 1400px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
   gap: 6.1875rem;
   flex: wrap;
 
@@ -87,5 +87,8 @@ export const BannerWrapper = styled.div`
       flex-direction: column;
       gap: 8px;
     }
+  }
+
+  @media screen and (max-width: 969pxpx) {
   }
 `;

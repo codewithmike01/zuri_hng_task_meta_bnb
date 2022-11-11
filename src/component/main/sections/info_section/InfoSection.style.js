@@ -13,7 +13,7 @@ export const InfoWrapper = styled.div`
   max-width: 1400px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 
   .text-section {
     color: #fff;
