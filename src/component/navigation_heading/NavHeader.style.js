@@ -6,7 +6,7 @@ export const NavHeaderContainer = styled.div`
 
 export const NavHeaderWrapper = styled.div`
   width: 90%;
-  max-width: 14000;
+  max-width: 1400px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
