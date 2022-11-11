@@ -40,9 +40,8 @@ const PlaceToStay = () => {
             <img src={Setting} alt="Filter settings" />
           </div>
         </section>
-
-        <CardContainer cardItems={cardItems} />
       </PlaceToStayWrapper>
+      <CardContainer cardItems={cardItems} />
     </PlaceToStayContainer>
   );
 };
