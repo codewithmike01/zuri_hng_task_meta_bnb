@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { primaryColor } from '../../global_style/Global.style';
+import { primaryColor } from '../../global_componets_style/Global.style';
 
 export const BannerContainer = styled.div``;
 
@@ -31,6 +31,41 @@ export const BannerWrapper = styled.div`
       font-weight: 400;
       font-size: 1.009rem;
       line-height: 35px;
+    }
+
+    form {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+
+      .input-banner-search {
+        background: rgba(247, 247, 247, 0.1);
+        border: 1px solid #a3a3a3;
+        border-radius: 8px 0px 0px 8px;
+        padding: 1.2rem 0;
+
+        &::placeholder {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 0.8rem;
+          line-height: 130%;
+          color: #b8b8b8;
+        }
+        &:focus {
+          outline: none;
+        }
+      }
+
+      button {
+        width: 100%;
+        border-radius: 0px 8px 8px 0px;
+      }
+
+      /* General form values */
+      .input-banner-search,
+      button {
+        padding-left: 0.7rem;
+        height: 54px;
+      }
     }
   }
 `;
