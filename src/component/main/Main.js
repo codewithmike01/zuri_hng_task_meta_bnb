@@ -29,7 +29,9 @@ const Main = () => {
           </li>
         </ul>
       </section>
+      <div id="nfts"></div>
       <CardContainer cardItems={cardItems} />
+      <div id="community"></div>
       <InfoSection />
     </MainContainer>
   );

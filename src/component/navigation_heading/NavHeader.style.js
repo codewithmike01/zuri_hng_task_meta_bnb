@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { bgColor } from '../../global_componets_style/Global.style';
 
 export const NavHeaderContainer = styled.div`
   padding-top: 1.5rem;
@@ -11,6 +12,14 @@ export const NavHeaderWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+
+  /* Ham */
+  .ham-menu {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: none;
+  }
 
   .logo-section {
     display: flex;
@@ -58,6 +67,59 @@ export const NavHeaderWrapper = styled.div`
       outline: none;
       background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
       border-radius: 10px;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    position: relative;
+    .ham-menu {
+      display: block;
+    }
+
+    /* Display none */
+    nav,
+    .create-wallet {
+      display: ${({ showMobile }) => (showMobile ? 'flex' : 'none')};
+      position: fixed;
+      top: 80px;
+      flex-direction: column;
+      z-index: 3;
+      width: 240px;
+      background: #1d1d1e;
+      left: -100%;
+      animation: slides 0.5s ease-in-out forwards;
+
+      @keyframes slides {
+        from {
+          left: 100%;
+        }
+
+        to {
+          left: 0;
+        }
+      }
+    }
+
+    .create-wallet {
+      height: 100px;
+      z-index: 2;
+      padding-top: 1.5rem;
+
+      button {
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+
+    nav {
+      top: 170px;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+
+      a {
+        color: #fff;
+        margin: 0 auto;
+      }
     }
   }
 `;
