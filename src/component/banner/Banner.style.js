@@ -10,6 +10,7 @@ export const BannerWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 6.1875rem;
+  flex: wrap;
 
   .banner-text {
     display: flex;
@@ -66,6 +67,25 @@ export const BannerWrapper = styled.div`
         padding-left: 0.7rem;
         height: 54px;
       }
+    }
+  }
+
+  .banner-image {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    height: calc(100% + 100px);
+
+    .first-image-stack-container {
+      justify-content: flex-end;
+    }
+
+    /* Genaral values */
+    .first-image-stack-container,
+    .second-image-stack-container {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
     }
   }
 `;

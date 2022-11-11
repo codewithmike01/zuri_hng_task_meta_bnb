@@ -1,6 +1,10 @@
 import React from 'react';
 import ButtonSharp from '../../global_componets_style/buttons/ButtonSharp';
 import { BannerContainer, BannerWrapper } from './Banner.style';
+import HouseNight from '../../assests/images/house_night.svg';
+import HouseNoRoof from '../../assests/images/house_fun.svg';
+import HouseSmoke from '../../assests/images/house_smoke.svg';
+import HouseFun from '../../assests/images/house_no_roof.svg';
 
 const Banner = () => {
   return (
@@ -27,6 +31,18 @@ const Banner = () => {
             />
             <ButtonSharp text="Search" />
           </form>
+        </section>
+
+        <section className="banner-image">
+          <div className="first-image-stack-container">
+            <img src={HouseNight} alt="NFT of house night" />
+            <img src={HouseFun} alt="NFT of house fun" />
+          </div>
+
+          <div className="second-image-stack-container">
+            <img src={HouseSmoke} alt="NFT of house fun" />
+            <img src={HouseNoRoof} alt="NFT of house night" />
+          </div>
         </section>
       </BannerWrapper>
     </BannerContainer>
