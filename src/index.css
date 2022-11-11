@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;700&display=swap');
+
 html {
   margin: 0;
   padding: 0;
@@ -14,4 +16,6 @@ html {
 }
 
 body {
+  font-family: 'Red Rose', cursive;
+  background: linear-gradient(124.4deg, #ffffff 10.8%, #ffffff 87.34%);
 }
