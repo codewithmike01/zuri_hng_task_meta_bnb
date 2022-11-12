@@ -18,13 +18,18 @@ export const PlaceToStayWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
 
     .nav-links {
+      width: 80%;
       .search-tab {
+        width: 100%;
         display: flex;
         align-items: center;
-
-        gap: 6rem;
+        justify-content: space-between;
+        gap: 1rem;
+        flex-wrap: wrap;
 
         li {
           list-style-type: none;
@@ -62,5 +67,16 @@ export const PlaceToStayWrapper = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
     grid-gap: 1rem;
+  }
+
+  @media screen and (max-width: 578px) {
+    .nav-wrapper {
+      gap: 1.5rem;
+      .nav-links {
+        .search-tab {
+          justify-content: flex-start;
+        }
+      }
+    }
   }
 `;
