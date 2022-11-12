@@ -9,11 +9,11 @@ export const FooterContainer = styled.div`
     width: 90%;
     max-width: 1400px;
     margin: 0 auto;
+    margin-top: 30px;
     display: flex;
     align-items: center;
     gap: 0.6rem;
     color: #f7f7f7;
-
     font-size: 0.7rem;
   }
 `;
@@ -65,8 +65,23 @@ export const FooterWrapper = styled.div`
       list-style-type: none;
       font-style: normal;
       font-weight: 400;
-      font-size: 0.6rem;
+      font-size: 0.7rem;
       line-height: 35px;
     }
+  }
+
+  @media screen and (max-width: 578px) {
+    flex-flow: row wrap;
+    gap: 1.5rem;
+
+    .info:nth-child(4) {
+      text-align: left;
+      width: 30%;
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    flex-direction: column;
+    gap: 3.5rem;
   }
 `;
