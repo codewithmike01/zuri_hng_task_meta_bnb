@@ -8,7 +8,7 @@ export const BannerWrapper = styled.div`
   max-width: 1400px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 6.1875rem;
   flex: wrap;
 
@@ -72,7 +72,7 @@ export const BannerWrapper = styled.div`
 
   .banner-image {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
     gap: 8px;
     height: calc(100% + 100px);
 
@@ -89,6 +89,17 @@ export const BannerWrapper = styled.div`
     }
   }
 
-  @media screen and (max-width: 969pxpx) {
+  /* Table below */
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: repeat(1, minmax(250px, 1fr));
+  }
+
+  /* Mobile */
+  @media screen and (max-width: 578px) {
+    .banner-text {
+      h2 {
+        font-size: 1.7rem;
+      }
+    }
   }
 `;

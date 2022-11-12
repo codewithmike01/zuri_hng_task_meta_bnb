@@ -19,7 +19,7 @@ export const MainContainer = styled.div`
       display: flex;
       justify-content: space-between;
       align-items: center;
-      flex: wrap;
+      flex-flow: row wrap;
       gap: 2rem;
 
       li {
@@ -49,6 +49,13 @@ export const MainContainer = styled.div`
           font-style: normal;
           font-weight: 700;
         }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .strip-section {
+      ul {
       }
     }
   }

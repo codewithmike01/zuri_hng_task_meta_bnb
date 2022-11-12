@@ -13,7 +13,7 @@ export const InfoWrapper = styled.div`
   max-width: 1400px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: 1fr 1fr;
 
   .text-section {
     color: #fff;
@@ -56,6 +56,19 @@ export const InfoWrapper = styled.div`
       img {
         width: 100%;
       }
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+    .text-section {
+      order: 1;
+    }
+
+    .image-section {
+      margin: 0 auto;
+      order: -1;
     }
   }
 `;
