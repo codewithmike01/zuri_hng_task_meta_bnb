@@ -67,7 +67,7 @@ export const CreateWalletWrapper = styled.div`
           font-family: 'Sora', sans-serif;
           font-style: normal;
           font-weight: 600;
-          font-size: 18px;
+          font-size: 0.8rem;
           line-height: 23px;
           color: #000000;
         }
