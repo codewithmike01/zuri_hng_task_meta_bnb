@@ -15,9 +15,7 @@ export const CreateWalletContainer = styled.div`
 
 export const CreateWalletWrapper = styled.div`
   max-width: 600px;
-
-  width: 100%;
-
+  width: 90%;
   background: #ffffff;
   border-radius: 16px;
   padding-bottom: 0.8rem;
@@ -46,15 +44,16 @@ export const CreateWalletWrapper = styled.div`
     display: flex;
     flex-direction: column;
     gap: 15px;
+
     .card {
       cursor: pointer;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
       padding: 12px 20px;
-      gap: 135px;
-      width: 536px;
-      height: 68px;
+      gap: 2rem;
+      max-width: 536px;
       background: #f8f9fa;
       border: 1px solid #cfd8dc;
       border-radius: 12px;
@@ -62,6 +61,7 @@ export const CreateWalletWrapper = styled.div`
       .img-container {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
         gap: 15px;
         p {
           font-family: 'Sora', sans-serif;
