@@ -123,4 +123,8 @@ export const NavHeaderWrapper = styled.div`
       }
     }
   }
+
+  @media screen and (max-width: 290px) {
+    width: 96%;
+  }
 `;

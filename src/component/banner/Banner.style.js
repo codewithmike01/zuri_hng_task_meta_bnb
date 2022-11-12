@@ -72,7 +72,7 @@ export const BannerWrapper = styled.div`
 
   .banner-image {
     display: grid;
-    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    grid-template-columns: repeat(2, minmax(125px, 1fr));
     gap: 8px;
     height: calc(100% + 100px);
 
@@ -101,5 +101,9 @@ export const BannerWrapper = styled.div`
         font-size: 1.7rem;
       }
     }
+  }
+
+  @media screen and (max-width: 290px) {
+    width: 96%;
   }
 `;
