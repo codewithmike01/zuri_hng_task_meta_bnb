@@ -72,7 +72,9 @@ export const NavHeaderWrapper = styled.div`
   @media screen and (max-width: 1024px) {
     position: relative;
     .ham-menu {
-      display: block;
+      display: flex;
+      bottom: 0;
+      margin-bottom: -9px;
     }
 
     /* Display none */
