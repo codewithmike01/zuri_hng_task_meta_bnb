@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { NavHeaderContainer, NavHeaderWrapper } from './NavHeader.style';
 import logo from '../../assests/images/logo.svg';
@@ -8,6 +8,17 @@ import { FiMenu, FiX } from 'react-icons/fi';
 
 const NavHeader = ({ func }) => {
   const [showMobile, setShowMobile] = useState(false);
+  const [navState, setNavState] = useState(true);
+  const location = useLocation();
+
+  // Hide onPage navigation when not present on current page
+  useEffect(() => {
+    if (location.pathname === '/') {
+      setNavState(true);
+    } else {
+      setNavState(false);
+    }
+  }, [location.pathname]);
 
   const handleClick = (data) => {
     setShowMobile(false);
@@ -32,12 +43,18 @@ const NavHeader = ({ func }) => {
           <Link to="/place" onClick={() => handleClick()}>
             Place to stay
           </Link>
-          <AnchorLink href="#nfts" onClick={() => handleClick()}>
-            NFTs
-          </AnchorLink>
-          <AnchorLink href="#community" onClick={() => handleClick()}>
-            Community
-          </AnchorLink>
+
+          {navState && (
+            <AnchorLink href="#nfts" onClick={() => handleClick()}>
+              NFTs
+            </AnchorLink>
+          )}
+
+          {navState && (
+            <AnchorLink href="#community" onClick={() => handleClick()}>
+              Community
+            </AnchorLink>
+          )}
         </nav>
 
         <section className="create-wallet">
