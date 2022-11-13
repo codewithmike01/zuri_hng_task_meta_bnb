@@ -5,7 +5,7 @@ export const MainContainer = styled.div`
   margin-top: 7.133125rem;
   display: flex;
   flex-direction: column;
-  gap: 4.02875rem;
+  gap: 6.02875rem;
 
   .strip-section {
     margin-top: 3rem;
