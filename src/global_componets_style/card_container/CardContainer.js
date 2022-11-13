@@ -6,8 +6,6 @@ import {
 } from './CardContainer.style';
 
 const CardContainer = ({ cardItems }) => {
-  console.log(cardItems);
-  console.log('Hello');
   return (
     <CardSectionContainer>
       <CardSectionWrapper>

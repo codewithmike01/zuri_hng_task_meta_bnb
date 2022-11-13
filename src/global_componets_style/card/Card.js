@@ -21,7 +21,7 @@ const Card = ({ id, image }) => {
         </div>
         <div className="star-container">
           {[1, 2, 3, 4, 5].map((val) => (
-            <img src={Star} alt="Star" />
+            <img src={Star} alt="Star" key={val} />
           ))}
         </div>
       </div>
