@@ -35,10 +35,9 @@ const Banner = () => {
 
         <section className="banner-image">
           <div className="first-image-stack-container">
-            <img src={HouseNight} alt="NFT of house night" />
+            <img src={HouseNight} alt="NFT of house night" id="img1" />
             <img src={HouseFun} alt="NFT of house fun" />
           </div>
-
           <div className="second-image-stack-container">
             <img src={HouseSmoke} alt="NFT of house fun" />
             <img src={HouseNoRoof} alt="NFT of house night" />

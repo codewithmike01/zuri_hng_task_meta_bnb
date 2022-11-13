@@ -5,7 +5,7 @@ export const MainContainer = styled.div`
   margin-top: 7.133125rem;
   display: flex;
   flex-direction: column;
-  gap: 6.02875rem;
+  gap: 4.02875rem;
 
   .strip-section {
     margin-top: 3rem;
@@ -49,13 +49,6 @@ export const MainContainer = styled.div`
           font-style: normal;
           font-weight: 700;
         }
-      }
-    }
-  }
-
-  @media screen and (max-width: 1024px) {
-    .strip-section {
-      ul {
       }
     }
   }
