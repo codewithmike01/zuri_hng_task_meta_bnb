@@ -6,10 +6,8 @@ This project showcases a responsive MetaBnb website built with Reactjs. Where us
 
 [Live Link][https://zuri-hng-task-meta-bnb.vercel.app/]
 
-<br/>
 ![image](https://user-images.githubusercontent.com/58771507/201509440-a0fac826-f913-42b2-8ef4-9b5195e618d4.png)
 
-<br />
 ## Getting Started
 
 ### Installing Dependecies
