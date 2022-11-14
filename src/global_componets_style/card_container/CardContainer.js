@@ -5,9 +5,10 @@ import {
   CardSectionWrapper,
 } from './CardContainer.style';
 
-const CardContainer = ({ cardItems }) => {
+const CardContainer = ({ cardItems, title }) => {
   return (
     <CardSectionContainer>
+      {title && <h3>{title}</h3>}
       <CardSectionWrapper>
         {cardItems.map(({ id, image }) => (
           <Card image={image} key={id} />

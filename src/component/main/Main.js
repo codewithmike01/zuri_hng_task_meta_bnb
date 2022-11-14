@@ -30,7 +30,10 @@ const Main = () => {
         </ul>
       </section>
       <div id="nfts"></div>
-      <CardContainer cardItems={cardItems} />
+      <CardContainer
+        cardItems={cardItems}
+        title="Inspiration for your next adventure"
+      />
       <div id="community"></div>
       <InfoSection />
     </MainContainer>
