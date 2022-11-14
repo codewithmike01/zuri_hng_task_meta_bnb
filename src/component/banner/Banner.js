@@ -1,4 +1,5 @@
 import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import ButtonSharp from '../../global_componets_style/buttons/ButtonSharp';
 import { BannerContainer, BannerWrapper } from './Banner.style';
 import HouseNight from '../../assests/images/house_night.svg';
@@ -35,7 +36,7 @@ const Banner = () => {
 
         <section className="banner-image">
           <div className="first-image-stack-container">
-            <img src={HouseNight} alt="NFT of house night" id="img1" />
+            <img src={HouseNight} alt="NFT of house night" />
             <img src={HouseFun} alt="NFT of house fun" />
           </div>
           <div className="second-image-stack-container">

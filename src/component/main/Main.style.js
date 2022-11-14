@@ -2,7 +2,8 @@ import styled from 'styled-components';
 import { bgColor } from '../../global_componets_style/Global.style';
 
 export const MainContainer = styled.div`
-  margin-top: 7.133125rem;
+  margin-top: 5.133125rem;
+
   display: flex;
   flex-direction: column;
   gap: 6.02875rem;
