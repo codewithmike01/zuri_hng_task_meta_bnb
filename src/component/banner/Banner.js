@@ -1,5 +1,4 @@
 import React from 'react';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 import ButtonSharp from '../../global_componets_style/buttons/ButtonSharp';
 import { BannerContainer, BannerWrapper } from './Banner.style';
 import HouseNight from '../../assests/images/house_night.svg';
