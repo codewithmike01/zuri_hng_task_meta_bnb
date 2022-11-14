@@ -4,9 +4,9 @@ import BlueHome from '../../../../assests/images/rounded_img.svg';
 // import LightHome from '../../../../assests/images/white_house.svg';
 // import PlayHome from '../../../../assests/images/play_house.svg';
 
-const InfoSection = () => {
+const InfoSection = ({ scrollId }) => {
   return (
-    <InfoContainer>
+    <InfoContainer id={scrollId}>
       <InfoWrapper>
         <section className="text-section">
           <h3>Metabnb NFTs</h3>

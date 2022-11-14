@@ -5,7 +5,7 @@ export const CardSectionContainer = styled.div`
   h3 {
     font-style: normal;
     font-weight: 700;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     line-height: 60px;
     color: #000000;
     text-align: center;

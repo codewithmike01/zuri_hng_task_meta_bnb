@@ -29,13 +29,13 @@ const Main = () => {
           </li>
         </ul>
       </section>
-      <div id="nfts"></div>
+
       <CardContainer
         cardItems={cardItems}
         title="Inspiration for your next adventure"
+        scrollId="nfts"
       />
-      <div id="community"></div>
-      <InfoSection />
+      <InfoSection scrollId="community" />
     </MainContainer>
   );
 };

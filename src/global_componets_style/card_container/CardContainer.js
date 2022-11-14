@@ -5,9 +5,9 @@ import {
   CardSectionWrapper,
 } from './CardContainer.style';
 
-const CardContainer = ({ cardItems, title }) => {
+const CardContainer = ({ cardItems, title, scrollId }) => {
   return (
-    <CardSectionContainer>
+    <CardSectionContainer id={scrollId ?? ''}>
       {title && <h3>{title}</h3>}
       <CardSectionWrapper>
         {cardItems.map(({ id, image }) => (
