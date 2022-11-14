@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const CardSectionContainer = styled.div`
-  /* padding: 2.7rem 0; */
+  padding: 2.7rem 0;
   h3 {
     font-style: normal;
     font-weight: 700;
