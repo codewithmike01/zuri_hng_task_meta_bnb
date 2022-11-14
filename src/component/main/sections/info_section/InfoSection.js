@@ -1,8 +1,6 @@
 import React from 'react';
 import { InfoContainer, InfoWrapper } from './InfoSection.style';
 import BlueHome from '../../../../assests/images/rounded_img.svg';
-// import LightHome from '../../../../assests/images/white_house.svg';
-// import PlayHome from '../../../../assests/images/play_house.svg';
 
 const InfoSection = ({ scrollId }) => {
   return (
