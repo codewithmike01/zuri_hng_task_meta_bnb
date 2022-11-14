@@ -1,7 +1,14 @@
 import styled from 'styled-components';
 
 export const NavHeaderContainer = styled.div`
-  padding-top: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: 4;
 `;
 
 export const NavHeaderWrapper = styled.div`
